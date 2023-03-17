@@ -126,9 +126,9 @@ public class CarbCalculatorSteps {
 
     @Then("the daily calorie allowance for losing 1 pound per week is {string}")
     public void weight_loss_1_pound_is_valid(String result_value) {
-        WebElement weightLoassCalorieAllowanceElement = driver.findElement(By.xpath("//*[@id=\"content\"]/table/tbody/tr[3]/td[2]"));
+        WebElement weightLossCalorieAllowanceElement = driver.findElement(By.xpath("//*[@id=\"content\"]/table/tbody/tr[3]/td[2]"));
 
-        assertEquals(weightLoassCalorieAllowanceElement.getText(), result_value);
+        assertEquals(weightLossCalorieAllowanceElement.getText(), result_value);
     }
 
     @Then("the daily calorie allowance for losing 2 pounds per week is {string}")
